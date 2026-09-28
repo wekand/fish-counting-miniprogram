@@ -1,0 +1,20 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# Django 数据库
+db.sqlite3
+
+# 运行时上传的图片和标注结果
+media/
+
+# IDE 配置
+.idea/
+.vscode/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# YOLO 模型权重
+*.pt
