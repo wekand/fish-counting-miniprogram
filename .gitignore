@@ -18,3 +18,5 @@ Thumbs.db
 
 # YOLO 模型权重
 *.pt
+
+test.jpg
