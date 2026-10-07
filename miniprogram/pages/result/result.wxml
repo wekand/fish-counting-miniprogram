@@ -1,0 +1,5 @@
+<!--pages/result/result.wxml-->
+<view class="bar">
+  <text>总计{{num}}条鱼</text>
+</view>
+<image class="img" src="{{img}}" mode="widthFix"></image>

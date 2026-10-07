@@ -8,7 +8,7 @@ from lib.yolov8 import FishDetector
 #查询
 def fish_base(request):
     last=FishBase.objects.all().order_by('id').last()
-    return JsonResponse({'code':100,'msg':'成功','result':[str(last.img),last.number]})
+    return JsonResponse({'code': 100, 'msg': '成功', 'result': ['http://' + request.get_host() + '/media/' + str(last.img), last.number]})
 
 #上传
 @csrf_exempt

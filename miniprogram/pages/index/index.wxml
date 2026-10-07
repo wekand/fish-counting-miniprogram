@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="{{avatar}}" mode="widthFix" bind:tap="bindToCamera"></image>
+  <button bind:tap="postUser">提交</button>
+  <button bind:tap="chooseImage">从相册选择</button>
+</view>

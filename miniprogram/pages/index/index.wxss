@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100rpx;
+}
+
+.container image {
+  width: 80%;
+  height: 400rpx;
+}
+
+.container button {
+  margin-top: 60rpx;
+  width: 60%;
+  background-color: #07c160;
+  color: white;
+}

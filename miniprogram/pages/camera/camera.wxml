@@ -1,0 +1,11 @@
+<!--pages/camera/camera.wxml-->
+<camera class="camera" device-position="{{backFront ? 'back' : 'front'}}" flash="off"></camera>
+
+<view class="controls">
+  <view class="switch-btn" bind:tap="switchCamera">
+    <text>切镜</text>
+  </view>
+  <view class="shutter" bind:tap="takePhoto">
+    <text>拍照</text>
+  </view>
+</view>
