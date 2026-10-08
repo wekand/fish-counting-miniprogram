@@ -23,16 +23,24 @@ Page({
   },
 
   postUser() {
+    console.log('点了提交，avatar =', this.data.avatar)
+    wx.showLoading({ title: '提交中...' })
     wx.uploadFile({
       filePath: this.data.avatar,
       name: 'avatar',
       url: api.upload,
       success: (res) => {
+        console.log('上传成功：', res)
+        wx.hideLoading()
         wx.navigateTo({
-          url:'/pages/result/result'
+          url: '/pages/result/result'
         })
+      },
+      fail: (err) => {
+        console.log('上传失败：', err)
+        wx.hideLoading()
+        wx.showToast({ title: '上传失败', icon: 'none' })
       }
     })
   }
 })
-

@@ -1,4 +1,4 @@
-const rootUrl = 'http://192.168.99.196:8000/fish'
+const rootUrl = 'http://192.168.252.196:8000/fish'
 
 module.exports = {
   fishbase: rootUrl + '/fishbase/',

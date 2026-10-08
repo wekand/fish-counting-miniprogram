@@ -20,3 +20,5 @@ Thumbs.db
 *.pt
 
 test.jpg
+project.private.config.json
+**/project.private.config.json
