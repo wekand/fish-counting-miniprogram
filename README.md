@@ -96,7 +96,3 @@ python manage.py runserver 0.0.0.0:8000
 - OS：Windows 11
 - Python 3.12+ / PyTorch 2.x
 - 微信开发者工具 + PyCharm
-
-## 简历项目描述（可直接使用）
-
-> **鱼苗自动识别计数小程序** — 独立设计并实现基于 YOLOv8n 的鱼苗智能计数系统。使用 Selenium 爬取 204 张鱼苗图片，Roboflow 标注后在 CPU 上训练目标检测模型；后端基于 Django 封装 RESTful 接口，接收小程序上传的图片后调用 YOLO 推理，自动框选鱼苗并计数，结果与标注图存入 SQLite；前端为微信小程序原生开发，支持拍照、相册选图、结果展示与历史记录查询。
